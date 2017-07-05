@@ -7,22 +7,18 @@ var myReduce = require('./myReduce');
   To run it on the console do: `node index.js`
 ***********************************************************************/
 
-var numArray = [0,1,10,100,1000];
-
 
 /* myEach */
 
 //
-/*myEach(numArray, function print(element, index, arr) {
-   console.log('inside myEach', element, index, arr);
- });*/
 
 
 
 
-/* myMap */
 
-/*var input = ["a","b","c"];
+ /*myMap 
+
+var input = ["a","b","c"];
 var output = myMap(input, function capitalize(v){
     return v.toUpperCase();
 });

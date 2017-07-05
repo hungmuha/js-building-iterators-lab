@@ -1,10 +1,26 @@
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Map
 
+
+var num=[1,2,5,6];
+
 function myMap(arr, callback) {
-
-//  CODE INSIDE HERE   //
-
+var transformedValue;
+var newArray=[];
+for(i=0;i<arr.length;i++){
+  transformedValue= callback(arr[i],i,arr);
+  newArray.push(transformedValue);
 }
+ console.log(newArray);
+ return newArray;
+ 
+}
+
+function callthis(justNum){
+ return justNum + 2;
+}
+
+myMap(num,callthis);
+
 
 /*
  Best if you don't code out here.
